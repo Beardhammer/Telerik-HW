@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<!-- tr*12>(td>(label.registerItem>{Placeholder}))+td>input.textBox
+==> This zen code creates 12 rows, each holding a column with a label with class registerItem with text "Placeholder",
+and a column with a single input form(default is text) with class textBox ==> "{}" used in placeholder text -->
+
+<!-- If you think this code is a mess, you should've seen the first version!
+It was so messy that I started all over again just to escape that mess! -->
+
+<head lang="en">
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="01%20-%20RegisterStyles.css">
+    <title>Registration form</title>
+</head>
+<body>
+    <form>
+        <table class="registerForm">
+            <tfoot>
+                <tr>
+                    <td colspan="2" class="footer buttonsCentralised" align="center">
+                        <input type="submit" class="buttonsCentralised"/>
+                        <input type="reset" class="buttonsCentralised"/>
+                    </td>
+                </tr>
+            </tfoot>
+
+            <tbody>
+                <tr>
+                    <td class="text"><label for="lastName" class="registerItem">Last Name</label></td>
+                    <td class="padded"><input id="lastName" type="text" class="registerInput fullWidthItem" required="required"/></td>
+                </tr>
+                <tr>
+                    <td class="text"><label for="firstName" class="registerItem">First Name</label></td>
+                    <td class="padded"><input id="firstName" type="text" class="registerInput fullWidthItem" required="required"/></td>
+                </tr>
+                <tr>
+                    <td class="text"><label for="address" class="registerItem">Address</label></td>
+                    <td class="padded">
+                        <textarea id="address" cols="30" rows="4" class="registerInput"></textarea>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="text"><label for="cityState" class="registerItem">City</label></td>
+                    <td id="cityState" class="padded">
+                        <input id="city" type="text" class="registerInput"/>
+                        <label for="state" class="registerInput">State</label>
+                        <input type="text" id="state" class="registerInput"/>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="text"><label for="zip" class="registerItem">Zip/Postal Code</label></td>
+                    <td class="padded"><input id="zip" type="text" class="registerInput"/></td>
+                </tr>
+                <tr>
+                    <td class="text"><label for="countrySelect" class="registerItem">Country</label></td>
+                    <td class="padded">
+                        <select id="countrySelect" class="registerInput">
+                            <option value="1">Bulgaria</option>
+                            <option value="2">Russia</option>
+                            <option value="3">Nippon</option>
+                            <option value="4">China</option>
+                            <option value="5">Germany</option>
+                            <option value="6">France</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <!-- Needs more work -->
+                    <td class="text"><label for="" class="registerItem">Phone(country code,<br/>area code, number)</label></td>
+                    <td class="padded">
+                        <label>(+</label><input type="text" class="registerInput" id="countryCode"/><label>)</label>
+                        <input type="text" class="registerInput" id="areaCode"/>
+                        <input type="tel" class="registerInput" id="telephone"/>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="text"><label for="email" class="registerItem">E-mail</label></td>
+                    <td class="padded"><input id="email" type="email" class="registerInput fullWidthItem"/></td>
+                </tr>
+                <tr>
+                    <td class="text"><label for="date" class="registerItem">Birth date</label></td>
+                    <td class="padded">
+                        <input id="date" type="date" class="registerInput"/>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="text"><label for="gender" class="registerItem">Gender</label></td>
+                    <td class="padded">
+                        <select id="gender" class="registerInput">
+                            <option value="1" class="genderOption">Other</option>
+                            <option value="2" class="genderOption">Male</option>
+                            <option value="3" class="genderOption">Female</option>
+                        </select>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="text"><label for="startDate" class="registerItem">Staring date</label></td>
+                    <td id="startDate" class="padded">
+                        <input name="startChoice" id="spring" type="radio" class="startDate registerInput"/>
+                        <label for="spring" class="seasonChoice">Spring 2015</label>
+                        <input name="startChoice" id="summer" type="radio" class="startDate registerInput"/>
+                        <label for="summer" class="seasonChoice">Summer 2015</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="text"><label for="comments" class="registerItem">Comments/Questions</label></td>
+                    <td class="padded">
+                        <textarea id="comments" cols="30" rows="4" class="registerInput"></textarea>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </form>
+</body>
+</html>

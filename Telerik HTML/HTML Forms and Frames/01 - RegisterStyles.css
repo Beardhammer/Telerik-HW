@@ -1,0 +1,48 @@
+.registerForm {
+  width: 430px;
+  border: groove 2px black;
+  border-collapse: collapse;
+}
+.registerForm td {
+  border: solid 1px black;
+}
+.padded {
+  padding-right: 3px;
+  padding-left: 3px;
+}
+.text {
+  font-weight: bold;
+  text-align: center;
+}
+.fullWidthItem {
+  width: 250px;
+}
+.footer {
+  background-color: cadetblue;
+}
+input[type="radio"]:checked + label {
+  font-family: sans-serif;
+  font-size: 17px;
+  font-weight: bold;
+  text-decoration: overline blue;
+  color: cadetblue;
+  text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black, 1px 1px 0 black;
+}
+#zip {
+  width: 80px;
+}
+#countrySelect {
+  width: 180px;
+}
+#telephone {
+  width: 100px;
+}
+#areaCode {
+  width: 60px;
+}
+#countryCode {
+  width: 60px;
+}
+#state {
+  width: 50px;
+}

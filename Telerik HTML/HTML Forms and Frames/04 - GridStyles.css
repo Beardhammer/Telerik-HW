@@ -1,0 +1,137 @@
+Table {
+    border: solid 1px lightgray;
+    border-collapse: separate;
+    border-radius: 10px;
+    border-spacing: 0;
+    border-right: hidden;
+    font-family: sans-serif;
+}
+
+thead {
+    border: solid 1px lightgray;
+    background-image: url("Background.jpg");
+}
+
+td {
+    border-top: solid 1px lightslategray;
+    border-right: solid 1px lightgray;
+    text-indent: 10px;
+}
+
+th {
+    text-align: left;
+    padding: 5px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.general {
+    width: 200px;
+}
+
+.textItem {
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+
+.buttonTextInput {
+    height: 20px;
+    width: 19px;
+    border: solid 1px lightgray;
+    border-radius: 3px;
+    margin-left: 5px;
+    position: fixed;
+}
+
+.pageLink{
+    vertical-align: 45%;
+    font-size: 15px;
+    height: 20px;
+    padding: 3px 0 4px 4px;
+    color: black;
+    text-decoration: none;
+    border-radius: 3px;
+    border: solid 1px transparent
+}
+
+.inputHead {
+    height: 35px;
+}
+
+.footerCol a:hover, input[type="image"]:hover {
+    border: solid 1px orangered;
+}
+
+.footItem {
+    margin-top: 10px;
+    height: 24px;
+}
+
+.footerCol {
+
+    background-image: url("Background.jpg");
+    padding: 5px 10px 0 10px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.pageSize {
+    margin-left: 25px;
+    vertical-align: 45%;
+    font-size: 15px;
+    height: 20px;
+    padding: 4px 0 4px 4px;
+}
+
+.tableHead {
+    height: 20px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.footerPageChoice {
+    height: 24px;
+}
+
+.otherButton{
+    border: solid 1px lightgray;
+    border-radius: 3px;
+}
+
+#itemsPerPage{
+    vertical-align: 60%;
+}
+
+#header {
+    font-weight: normal;
+}
+
+#header {
+    margin-left: 10px;
+    background-image: url("Background.jpg");
+}
+
+#itemsNumber {
+    float: right;
+    margin-right: 13px;
+}
+
+#inputProdId {
+    width: 30px;
+}
+
+#inputProdName {
+    width: 150px;
+}
+
+#inputUnitPrice {
+    width: 100px;
+}
+
+#inputQtyPerUnit {
+    width: 60%;
+}
+
+#inputUnitsInStock {
+    width: 100px;
+}

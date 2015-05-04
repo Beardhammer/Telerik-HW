@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html>
+
+<head lang="en">
+  <meta charset="UTF-8">
+  <title>Grid component</title>
+  <link rel="stylesheet" type="text/css" href="04%20-%20GridStyles.css" />
+  <!-- Please, please, do not open this document in Firefox! I like that browser just as much as the next guy, but the background image gets fucked up and I don't know how to fix it :(
+     Internet explorer seems to do either the same(version 11 tested) or colors half the table correctly and the other half incorrectly(white)
+     Opera opens it as intended
+     Safari has not been tested
+     Edges are round inside the table, but the background image has 90 degree edges. I kept it like that so I don't have to put 2 additional backgrounds inside the folder and
+     keep file size low -->
+</head>
+
+<body>
+  <table id="itemsTable">
+    <colgroup>
+      <col width="100" />
+      <col width="300" />
+      <col class="general" />
+      <col class="general" />
+      <col class="general" />
+      <col width="115" />
+    </colgroup>
+    <thead class="header">
+      <tr>
+        <th id="header" class="textItem" colspan="6">
+          Drag a column header and drop it here to group by that column
+        </th>
+      </tr>
+      <tr class="tableHeads">
+        <td class="tableHead textItem">Product ID</td>
+        <td class="tableHead textItem">Product name</td>
+        <td class="tableHead textItem">Unit price</td>
+        <td class="tableHead textItem">Quantity per unit</td>
+        <td class="tableHead textItem">Units in stock</td>
+        <td class="tableHead textItem">Discontinued</td>
+      </tr>
+      <tr>
+        <td class="inputHead textItem" rowspan="2">
+          <input id="inputProdId" class="inputItem" type="text" />
+        </td>
+        <td class="inputHead textItem" rowspan="2">
+          <input id="inputProdName" class="inputItem" type="text" />
+        </td>
+        <td class="inputHead textItem" rowspan="2">
+          <input id="inputUnitPrice" class="inputItem" type="text" />
+          <input type="image" class="buttonTextInput" src="ButtonInputTC.png" />
+        </td>
+        <td class="inputHead textItem" rowspan="2">
+          <input id="inputQtyPerUnit" class="inputItem" type="text" />
+        </td>
+        <td class="inputHead textItem" rowspan="2">
+          <input id="inputUnitsInStock" class="inputItem" type="text" />
+          <input type="image" class="buttonTextInput" src="ButtonInputTC.png" />
+        </td>
+        <td class="inputHead textItem" rowspan="2">
+          <input id="inputDiscontinued" class="inputItem" type="checkbox" />
+          <input type="image" class="buttonTextInput" src="ButtonInputTC.png" />
+        </td>
+      </tr>
+    </thead>
+    <tfoot>
+      <tr id="footer">
+        <td class="footerCol" colspan="6">
+          <input type="image" src="ButtMoreBack.png" class="footItem footerInput otherButton" />
+          <input type="image" src="ButtBack.png" class="footItem footerInput otherButton" />
+          <a href="04%20-%20Grid%20component.html" class="pageLink footItem">1&nbsp;</a>
+          <a href="04%20-%20Grid%20component.html" class="pageLink footItem">2&nbsp;</a>
+          <a href="04%20-%20Grid%20component.html" class="pageLink footItem">3&nbsp;</a>
+          <a href="04%20-%20Grid%20component.html" class="pageLink footItem">4&nbsp;</a>
+          <a href="04%20-%20Grid%20component.html" class="pageLink footItem">5&nbsp;</a>
+          <a href="04%20-%20Grid%20component.html" class="pageLink footItem">6&nbsp;</a>
+          <a href="04%20-%20Grid%20component.html" class="pageLink footItem">7&nbsp;</a>
+          <a href="04%20-%20Grid%20component.html" class="pageLink footItem">8&nbsp;</a>
+          <a href="04%20-%20Grid%20component.html" class="pageLink footItem">9&nbsp;</a>
+          <a href="04%20-%20Grid%20component.html" class="pageLink footItem">10&nbsp;</a>
+          <a href="04%20-%20Grid%20component.html" class="pageLink footItem">&nbsp;...&nbsp;</a>
+          <input type="image" src="ButtForw.png" class="footItem footerInput otherButton" />
+          <input type="image" src="ButtMoreForw.png" class="footItem footerInput otherButton" />
+          <label for="itemsPerPage" class="footItem pageSize">Page size:</label>
+          <select name="itemsPerPage" id="itemsPerPage" class="footItem footerPageChoice">
+            <option value="10">10</option>
+            <option value="20">20</option>
+            <option value="30">30</option>
+            <option value="50">50</option>
+            <option value="100">100</option>
+          </select>
+          <label id="itemsNumber" for="" class="footItem">335104 items in 33511 pages</label>
+        </td>
+      </tr>
+    </tfoot>
+    <tbody>
+      <tr class="contentRow textRow">
+        <td class="contentCol textItem">1</td>
+        <td class="contentCol textItem">Chai</td>
+        <td class="contentCol textItem">$18.00</td>
+        <td class="contentCol textItem">10 boxes x 20 bags</td>
+        <td class="contentCol textItem">39</td>
+        <td class="contentCol textItem">
+          <input type="checkbox" class="discontinued textItem" disabled="disabled" />
+        </td>
+      </tr>
+      <tr class="contentRow textRow">
+        <td class="contentCol textItem">2</td>
+        <td class="contentCol textItem">Chang</td>
+        <td class="contentCol textItem">$19.00</td>
+        <td class="contentCol textItem">24 - 12 oz bottles</td>
+        <td class="contentCol textItem">17</td>
+        <td class="contentCol textItem">
+          <input type="checkbox" class="discontinued textItem" disabled="disabled" />
+        </td>
+      </tr>
+      <tr class="contentRow textRow">
+        <td class="contentCol textItem">3</td>
+        <td class="contentCol textItem">Aniseed Syrup</td>
+        <td class="contentCol textItem">$10.00</td>
+        <td class="contentCol textItem">12 - 550 ml bottles</td>
+        <td class="contentCol textItem">13</td>
+        <td class="contentCol textItem">
+          <input type="checkbox" class="discontinued textItem" disabled="disabled" />
+        </td>
+      </tr>
+      <tr class="contentRow textRow">
+        <td class="contentCol textItem">4</td>
+        <td class="contentCol textItem">Chef Anton's Cajun Seasoning</td>
+        <td class="contentCol textItem">$22.00</td>
+        <td class="contentCol textItem">48 - 6 oz jars</td>
+        <td class="contentCol textItem">53</td>
+        <td class="contentCol textItem">
+          <input type="checkbox" class="discontinued textItem" disabled="disabled" />
+        </td>
+      </tr>
+      <tr class="contentRow textRow">
+        <td class="contentCol textItem">5</td>
+        <td class="contentCol textItem">Chef Anton's Gumbo Mix</td>
+        <td class="contentCol textItem">$21.35</td>
+        <td class="contentCol textItem">36 boxes</td>
+        <td class="contentCol textItem">0</td>
+        <td class="contentCol textItem">
+          <input type="checkbox" class="discontinued textItem" checked="checked" disabled="disabled" />
+        </td>
+      </tr>
+      <tr class="contentRow textRow">
+        <td class="contentCol textItem">6</td>
+        <td class="contentCol textItem">Grandma's Boysenberry Spread</td>
+        <td class="contentCol textItem">$25.00</td>
+        <td class="contentCol textItem">12 - 8 oz jars</td>
+        <td class="contentCol textItem">120</td>
+        <td class="contentCol textItem">
+          <input type="checkbox" class="discontinued textItem" disabled="disabled" />
+        </td>
+      </tr>
+      <tr class="contentRow textRow">
+        <td class="contentCol textItem">7</td>
+        <td class="contentCol textItem">Uncle Bob's Organic Dried Pears</td>
+        <td class="contentCol textItem">$30.00</td>
+        <td class="contentCol textItem">12 - 1 lb pkgs.</td>
+        <td class="contentCol textItem">15</td>
+        <td class="contentCol textItem">
+          <input type="checkbox" class="discontinued textItem" disabled="disabled" />
+        </td>
+      </tr>
+      <tr class="contentRow textRow">
+        <td class="contentCol textItem">8</td>
+        <td class="contentCol textItem">Northwoods Cranberry juice</td>
+        <td class="contentCol textItem">$40.00</td>
+        <td class="contentCol textItem">12 - 12 oz jars</td>
+        <td class="contentCol textItem">6</td>
+        <td class="contentCol textItem">
+          <input type="checkbox" class="discontinued textItem" disabled="disabled" />
+        </td>
+      </tr>
+      <tr class="contentRow textRow">
+        <td class="contentCol textItem">9</td>
+        <td class="contentCol textItem">Mishi Kobe Niku</td>
+        <td class="contentCol textItem">$97.00</td>
+        <td class="contentCol textItem">18 - 500 g pkgs.</td>
+        <td class="contentCol textItem">29</td>
+        <td class="contentCol textItem">
+          <input type="checkbox" class="discontinued textItem" checked="checked" disabled="disabled" />
+        </td>
+      </tr>
+      <tr class="contentRow textRow">
+        <td class="contentCol textItem">10</td>
+        <td class="contentCol textItem">Ikura</td>
+        <td class="contentCol textItem">$31.00</td>
+        <td class="contentCol textItem">12 - 200 ml jars</td>
+        <td class="contentCol textItem">31</td>
+        <td class="contentCol textItem">
+          <input type="checkbox" class="discontinued textItem" disabled="disabled" />
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</body>
+
+</html>

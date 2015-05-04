@@ -1,0 +1,23 @@
+.floatLeft {
+    float: left;
+}
+
+.header {
+    margin-left: 500px;
+}
+
+#navigation {
+    margin-top: 150px;
+    margin-left: 50px;
+}
+
+.bordered {
+    margin-top: 50px;
+    border: solid 2px black;
+    border-collapse: collapse;
+}
+
+.bordered td, th {
+    border: solid 2px black;
+    padding: 5px;
+}

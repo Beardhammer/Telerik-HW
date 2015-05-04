@@ -1,0 +1,19 @@
+table {
+    border-collapse: collapse;
+    border: solid 2px black;
+}
+
+td {
+    border: solid 2px black;
+    height: 30px;
+    text-align: center
+}
+
+.leftAlign {
+    text-align: left;
+    padding-left: 10px;
+}
+
+.bold {
+    font-weight: bold;
+}

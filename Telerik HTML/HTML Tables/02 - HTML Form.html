@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <style>
+        .bold {
+            font-weight: bolder;
+        }
+
+        input[type="image"]:active {
+            background: orangered;
+        }
+
+        .left {
+            float: left;
+        }
+
+        label {
+            font-size: 24px;
+        }
+    </style>
+    <title>Some forms</title>
+</head>
+<body class="item">
+    <aside class="left">
+        <div>
+            <label for="name">Member name :&nbsp;</label>
+
+        </div>
+        <div>
+            <label for="mail">Email :</label>
+        </div>
+        <div>
+            <label for="school">School :</label>
+        </div>
+    </aside>
+
+    <main>
+        <div>
+            <input id="name" type="text" class="inputBox"/>
+            <label for="name" class="bold">*req</label>
+        </div>
+        <div>
+            <input id="mail" type="email" class="inputBox"/>
+            <label for="mail" class="bold">*req</label>
+        </div>
+        <div>
+            <input id="school" type="text" class="inputBox"/>
+            <label for="school" class="bold">*req</label>
+        </div>
+    </main>
+
+    <!-- Couldn't decide which one of these to put on the page, so I let YOU choose. Uncomment the line below, delete the next one and start this baby up!
+     I left the gif up in the internet instead of adding it to folder si I don't load Telerik's server with useless 1MB items -->
+    <!--  <input id="checksGif" class="" type="image" height="100px" width="100px" src="http://dinca.org/wp-content/uploads/2013/10/DINCA-VQ13-gif.gif" value="Text"/> -->
+    <input id="checks" class="" type="image" height="100px" width="100px" src="submitbutton.png" value="Text"/>
+    <!-- Made a selector-ish thingy that changes the buttons's background to red when being clicked on. Don't miss that :) -->
+
+</body>
+</html>

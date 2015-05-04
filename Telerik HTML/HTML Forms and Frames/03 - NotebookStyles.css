@@ -1,0 +1,42 @@
+#laptopFieldSet {
+  padding-bottom: 10px;
+  ;
+}
+#laptopTable {
+  font-family: sans-serif;
+  height: 400px;
+  border-radius: 10px;
+  border-spacing: 0;
+}
+#laptopListHeader {
+  text-align: center;
+  border-bottom: solid 2px black;
+}
+.laptopImage {
+  width: 150px;
+  height: 80px;
+}
+.coloredBorder {
+  border: solid 2px dimgray;
+}
+.padded {
+  padding: 10px
+}
+.laptopSpecs {
+  width: 180px;
+  height: 4px;
+  text-align: left;
+}
+.outputNumber {
+  width: 200px;
+}
+.laptopOption {
+  width: 180px;
+  margin: 10px 10px 30px 10px;
+}
+.alignCenter {
+  text-align: center;
+}
+.companyLink {
+  color: deepskyblue;
+}
