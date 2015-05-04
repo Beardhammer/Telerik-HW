@@ -1,0 +1,29 @@
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+Microsoft Visual Studio - It offers a multitude of editions for developing, testing, and deploying applications for the web,desktop, mobile, and even game consoles. 
+With a plethora of testing and compatibility tools, you can test on virtual machines, tap into the functionality of BrowserStack to see what your app looks like 
+across more than 300 browsers, run compatibility reports to identify patterns and issues between browsers and so much more.
+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+CodeBlocks - One of the most popular and free open source IDE for C and C++ users. This IDE has all of the features that a developer needs such as an efficient user interface,
+compiling and debugging functionalities, and so much more.
+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+Eclipse FDN - A free, open-source editor that was initially a Java environment but a variety of plug-ins have extended its capabilities considerably. 
+The Eclipse Standard 4.3.2 version, for instance, includes the Eclipse Platform along with the tools required to debug it, plus Java and Plugin Development Tooling and Git and CVS support. 
+If your requirements are different, you can choose from a variety of Eclipse Package Solutions, including tools for Java developers, Scout Developers, RCP and RAP Developers and more.
+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+Dev C++ - Dev C++ is a fully-featured IDE for programming languages. 
+Some of the IDE’s many features include  class browser, integrated debugging, a GCC-based compiler, 
+project manager, code compilation, edit and compile resource files, tools manager, and function listing.
+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+Codelite - An excellent and free open source IDE for the C/C++ programming language 
+that can run on all major platforms (OSX, Windows, Linux).
+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
